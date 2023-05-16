@@ -29,6 +29,10 @@ class Vector2D {
     this.y *= factor
   }
 
+  len() {
+    return Math.sqrt(this.x * this.x + this.y * this.y)
+  }
+
 }
 
 export {

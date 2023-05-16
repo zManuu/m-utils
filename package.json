@@ -1,16 +1,14 @@
 {
   "type": "module",
   "name": "manu-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "zManuu",
   "license": "ISC",
-  "dependencies": {
-    "typescript": "next"
-  },
   "devDependencies": {
+    "typescript": "next",
     "@babel/preset-env": "^7.21.5",
     "@types/jest": "^29.5.1",
     "babel-jest": "^29.5.0",

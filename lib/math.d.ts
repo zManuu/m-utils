@@ -10,5 +10,6 @@ declare class Vector2D {
     add(other: Vector2D): void;
     sub(other: Vector2D): void;
     mul(factor: number): void;
+    len(): number;
 }
 export { Vector2D };
