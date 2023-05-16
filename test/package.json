@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "manu-utils": "^1.0.1",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "test": "ts-node --esm index.ts"
+  }
+}
