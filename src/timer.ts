@@ -2,7 +2,7 @@ type Callback = () => void
 
 class Timer {
 
-  private timer: number
+  private timer: NodeJS.Timer
   private isPaused: boolean
   private callback: Callback
   private timeout: number
@@ -10,7 +10,7 @@ class Timer {
   constructor(callback: Callback, timeout: number, delay: number = 0) {
     this.callback = callback
     this.timeout = timeout
-    this.isPaused = false
+    this.isPaused = true
 
     setTimeout(this.start, delay)
   }

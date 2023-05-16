@@ -1,10 +1,9 @@
 import * as logger from './logger.js'
 import * as timer from './timer.js'
-
-type Nullable<T> = T | undefined
+import * as math from './math.js'
 
 export {
-  Nullable,
   logger,
-  timer
+  timer,
+  math
 }
