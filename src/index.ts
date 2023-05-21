@@ -1,9 +1,4 @@
-import * as logger from './logger.js'
-import * as timer from './timer.js'
-import * as math from './math.js'
-
-export {
-  logger,
-  timer,
-  math
-}
+export * as logger from './logger.js'
+export * as timer from './timer.js'
+export * as math from './math.js'
+export * as eventEmitter from './eventEmitter.js'
