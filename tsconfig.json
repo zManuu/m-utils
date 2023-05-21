@@ -6,7 +6,9 @@
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*"
