@@ -1,5 +1,5 @@
 export default {
   transform: {
-    ".*.ts": "babel-jest"
+    '.*.ts': 'babel-jest'
   }
-};
+}
