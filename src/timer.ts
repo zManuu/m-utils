@@ -7,7 +7,7 @@ class Timer {
   private callback: Callback
   private timeout: number
 
-  constructor(callback: Callback, timeout: number, delay: number = 0) {
+  constructor(callback: Callback, timeout: number, delay = 0) {
     this.callback = callback
     this.timeout = timeout
     this.isPaused = true

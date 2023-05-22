@@ -4,7 +4,7 @@ function v<T>() {
 
 class EventEmitter<T> {
 
-  private listeners: Map<keyof T, Function[]> = new Map()
+  private listeners: Map<keyof T, ((args: unknown) => void)[]> = new Map()
 
   emit<U extends keyof T>(key: U, args: T[U]) {
     this.listeners.get(key)?.forEach(e => e(args))

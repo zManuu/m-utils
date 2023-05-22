@@ -131,7 +131,7 @@ class Vector3D {
    * @returns wether or not two vectors are othogonal
    */
   isOrthogonal(other: Vector3D) {
-    return this.x * other.x + this.y * other.y + this.z * other.z == 0
+    return this.x * other.x + this.y * other.y + this.z * other.z === 0
   }
 
 }
