@@ -5,14 +5,17 @@ A small libary providing a bunch of typescript utilities.
 ### Overview
 
 [Installation](#installation)  
-[Usage](#usage)
 [Features](#features)
 
 ### Installation
 
-To install, simple run ```npm i --save manu-utils```.
+To install, simply run ```npm i --save manu-utils``` and use ```import ... from 'manu-utils'```.
 
-### Usage
+### Features
 
-There are multiple modules exported such as math, logger or timer.
-Simple use the imports from ```'manu-utils'```.
+[Auth](src/auth.ts)  
+[EventEmitter](src/eventEmitter.ts)  
+[Logger](src/logger.ts)  
+[Math](src/math.ts)  
+[Random](src/random.ts)  
+[Timer](src/timer.ts)  
