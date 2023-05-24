@@ -1,4 +1,5 @@
 type Callback = () => void;
+declare function wait(ms: number): Promise<void>;
 declare class Timer {
     private timer;
     private isPaused;
@@ -8,4 +9,4 @@ declare class Timer {
     start(): void;
     stop(): void;
 }
-export { Callback, Timer };
+export { Callback, Timer, wait };
