@@ -12,7 +12,12 @@ declare class Vector2D {
     multiply(factor: number): void;
     getLength(): number;
 }
-declare class Vector3D {
+type SimpleVector3D = {
+    x: number;
+    y: number;
+    z: number;
+};
+declare class Vector3D implements SimpleVector3D {
     static zero: Vector3D;
     static up: Vector3D;
     static down: Vector3D;
@@ -58,5 +63,9 @@ declare class Vector3D {
      * @returns wether or not two vectors are othogonal
      */
     isOrthogonal(other: Vector3D): boolean;
+    /**
+     * Can be called with any Vector3D implementation that has props x, y and z.
+     */
+    static safeDistance(a: SimpleVector3D, b: SimpleVector3D): number;
 }
 export { Vector2D, Vector3D };

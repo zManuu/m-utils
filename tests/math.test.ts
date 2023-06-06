@@ -19,6 +19,7 @@ describe('Math', () => {
     expect(a.getCrossProduct(b)).toEqual({ x: -8, y: 7, z: -1 })
     expect(a.getOrthogonal()).toEqual({ x: -5, y: 2, z: 6 })
     expect(a.isOrthogonal(b)).toBe(false)
+    expect(math.Vector3D.safeDistance(a, b)).toBe(a.distance(b))
   })
 
 })

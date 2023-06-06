@@ -35,7 +35,13 @@ class Vector2D {
 
 }
 
-class Vector3D {
+type SimpleVector3D = {
+  x: number
+  y: number
+  z: number
+}
+
+class Vector3D implements SimpleVector3D {
 
   public static zero = new Vector3D(0, 0, 0)
   public static up = new Vector3D(0, 0, 1)
@@ -132,6 +138,18 @@ class Vector3D {
    */
   isOrthogonal(other: Vector3D) {
     return this.x * other.x + this.y * other.y + this.z * other.z === 0
+  }
+
+  /**
+   * Can be called with any Vector3D implementation that has props x, y and z.
+   */
+  static safeDistance(a: SimpleVector3D, b: SimpleVector3D) {
+    const connecting: SimpleVector3D = {
+      x: Math.abs(a.x - b.x),
+      y: Math.abs(a.y - b.y),
+      z: Math.abs(a.z - b.z)
+    }
+    return Math.sqrt((connecting.x * connecting.x) + (connecting.y * connecting.y) + (connecting.z * connecting.z))
   }
 
 }
