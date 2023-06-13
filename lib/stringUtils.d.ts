@@ -1,2 +1,3 @@
 declare function toFirstUppercase(str: string): string;
-export { toFirstUppercase };
+declare function prettifyPath(str: string, pathType: '/' | '//' | '\\' | '\\\\'): string;
+export { toFirstUppercase, prettifyPath };

@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "manu-utils",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,7 +20,6 @@
   },
   "scripts": {
     "test": "jest",
-    "compile": "tsc",
-    "publish": "npm publish"
+    "compile": "tsc"
   }
 }
